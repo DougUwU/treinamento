@@ -1,0 +1,24 @@
+<mvc:View 
+    controllerName="sap.prj1.projecthelloworld.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout" 
+    displayBlock="true"
+    xmlns="sap.m">
+
+    <Shell id="shell">
+        <App id="app">
+            <Page id="page" title="{i18n>title}">
+                <content>
+                    <l:VerticalLayout id="_IDGenVerticalLayout1" class="sapUiContentPadding">
+                        <Text id="txt1" text="{i18n>description}"/>
+                        <Input
+                            id="productInput"
+                            placeholder="{i18n>inDesc}">
+                        </Input>
+                        <Button id="btnHello" text="{i18n>btnText}" press="onPress"/>
+                    </l:VerticalLayout>
+                </content>
+            </Page>
+        </App>
+    </Shell>
+</mvc:View>
